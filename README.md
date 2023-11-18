@@ -1,70 +1,63 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Backend (Node.js Express Server)
 
-## Available Scripts
+### `model.js`
 
-In the project directory, you can run:
+Define the data model for users.
 
-### `npm start`
+### `service.js`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Implement user authentication logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `controller.js`
 
-### `npm test`
+Handle requests and interact with the service.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `router.js`
 
-### `npm run build`
+Define routes and connect them to the controller.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `server.js`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Entry point for the Node.js server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend (React App)
 
-### `npm run eject`
+### `index.html`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+HTML template for the React app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `App.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Main React component managing routes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `components/Home/Home.js`
 
-## Learn More
+React component for the Home page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `components/Home/HomeCard.js`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React component for the card in the Home page (similarly for other pages).
 
-### Code Splitting
+### `index.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Entry point for the React app.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Run `npm install` to install dependencies for both frontend and backend.
+2. Start the backend server using `node backend/server.js`.
+3. Start the frontend React app using `npm start` in the `frontend` directory.
 
-### Making a Progressive Web App
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **backend**: Contains Node.js Express server files.
+- **frontend**: Contains React app files.
+  - **public**: Static files.
+  - **src**: React source code.
+    - **components**: Individual components for each page.
 
-### Advanced Configuration
+## Gitignore
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Node modules are added to `.gitignore` to avoid unnecessary files in the repository.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
